@@ -1,29 +1,12 @@
 <script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery/jquery-3.3.1.js"></script>
-<script language="JavaScript">
-	function load_ajax() {
-		$.ajax({
-			url:"pTextphantrangsp.php",
-			type: "get",
-			dataType: "text",
-			data:{
-			
-			},
-			success: function (data) {
-				alert(data);
-			}
-		});
-	}
-</script>
-
-
 <?php
     $a = 1;
     if (isset($_GET["a"])) {
         $a = $_GET["a"];
         settype($a,"int");
     }
-    $sql = "SELECT * FROM loaisanpham WHERE MaLoaiSanPham =$a";
+    $sql = "SELECT * FROM loaisanpham  WHERE BiXoa = 0 AND MaLoaiSanPham =$a";
     $result = DataProvider::ExecuteQuery($sql);
     while ($row1 = mysqli_fetch_array($result)) {
         ?>
@@ -35,7 +18,7 @@
 <div class="row" style="background-color: white">
     <?php
         //$sql = "SELECT * FROM sanpham ORDER BY MaLoaiSanPham = $a DESC LIMIT 0,6";
-        $sql = "SELECT * FROM sanpham WHERE MaLoaiSanPham = $a LIMIT 0,6 ";
+        $sql = "SELECT * FROM sanpham WHERE BiXoa = 0 AND MaLoaiSanPham = '$a' LIMIT 0,6 ";
         $result = DataProvider::ExecuteQuery($sql);
         while ($row = mysqli_fetch_array($result)) {
             ?>
@@ -61,7 +44,7 @@
 <!--	<button id="" onclick="load_ajax()">Xem Thêm</button>-->
 	<!--Load ajax phan trang-->
 	<?php
-        $sql = "SELECT * FROM sanpham WHERE MaLoaiSanPham = $a";
+        $sql = "SELECT * FROM sanpham WHERE BiXoa = 0 AND MaLoaiSanPham = $a";
         $result = DataProvider::ExecuteQuery($sql);
         $row = mysqli_fetch_array($result);
     ?>

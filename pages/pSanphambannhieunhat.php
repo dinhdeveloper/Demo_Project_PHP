@@ -1,12 +1,12 @@
 <br>
 <div class="shadow-lg p-3 mb-5 bg-white rounded">
-    <h3 style="text-align: center;color: red">
+    <h4 style="text-align: center;color: red">
         <strong>
             <img src="img/hot.gif">
             SẢN PHẨM BÁN CHẠY NHẤT
             <img src="img/hot.gif">
         </strong>
-    </h3>
+    </h4>
 </div>
 <!--phan trang-->
 <?php
@@ -33,8 +33,7 @@
     //?>
 <div class="row">
     <?php
-        $sql = "SELECT * FROM sanpham ORDER BY SoLuongBan >=50 DESC LIMIT 0,6 ";
-        //$sql = "SELECT * FROM `sanpham` WHERE SoLuotXem >=60";
+        $sql = "SELECT * FROM sanpham WHERE BiXoa = 0 ORDER BY SoLuongBan >=50 DESC LIMIT 0,6 ";
         $result = DataProvider::ExecuteQuery($sql);
         while ($row = mysqli_fetch_array($result)) {
             ?>

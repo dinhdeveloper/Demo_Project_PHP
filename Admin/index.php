@@ -50,7 +50,7 @@
 			$("#username").blur(function () {
 				var u = $(this).val();
 				$.ajax({
-					url: "textdn.php",
+					url: "Admin/textdn.php",
 					type: "post",
 					dataType: "text",
 					data:{

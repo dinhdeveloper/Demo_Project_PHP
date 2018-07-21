@@ -71,7 +71,7 @@
                         include 'giohang/capnhatsoluongsanpham.php';
                         break;
                     case 103:
-                        //include 'giohang/ptaothongtinkhachhangvadathang.php'; // tạo thông tin
+                        include 'giohang/exThongTinGiaoHang.php'; // tạo thông tin
                         break;
 					case 104:
 						include 'giohang/pdathang.php'; // đặt hàng

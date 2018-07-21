@@ -68,15 +68,21 @@ include_once 'modules/menu_left.php';
         case 1:
             //include("modules/menu_content.php");
             break;
+        case 2:
+            include ("pages/taikhoan/pIndex.php"); //quản lý tài khoản
+        break;
+        case 3:
+            include ("pages/loaisanpham/pIndex.php"); //quản lý loại sản phẩm
+            break;
+        case 4:
+            include ("pages/sanpham/pIndex.php"); //quản lý sản phẩm
+        break;
         //tài khoản
         case 102:
             include("pages/taikhoan/pThongtintaikhoan.php"); //trang thông tin tài khoản
             break;
         case 103:
             include("pages/taikhoan/pCapnhattaikhoan.php");// trang cập nhật tài khoản
-            break;
-        case 104:
-            include("pages/taikhoan/pDanhsachtaikhoan.php"); //trang danh sách tài khoản nhân viên
             break;
 //        case 105:
 //            include ("pages/taikhoan/pTaotaikhoanadmin.php");

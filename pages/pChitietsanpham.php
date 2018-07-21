@@ -5,7 +5,7 @@
 			$id = $_GET["id"];
             settype($id,"int");
         }
-        $sql = "SELECT MaSanPham,TenSanPham,MaLoaiSanPham,Gia,SoLuongTon,SoLuongBan,SoLuotXem,
+        $sql = "SELECT MaSanPham,TenSanPham,MaLoaiSanPham,Gia,SoLuongBan,SoLuotXem,
  				BiXoa,MoTa, HinhURL FROM sanpham WHERE masanpham =$id";
         $result = DataProvider::ExecuteQuery($sql);
         while ($row = mysqli_fetch_array($result)) {
@@ -68,13 +68,12 @@
                                 }
                             ?>
 						</h5>
-						<h5>Hàng còn: <strong><?php echo $row["SoLuongTon"] ?></strong> sản phẩm</h5>
                         <?php
                             $sql = "UPDATE sanpham SET SoLuotXem = SoLuotXem +1 WHERE MaSanPham = $id";
                             $result = DataProvider::ExecuteQuery($sql);
                         ?>
 						<h5>Số Lượt Xem: <strong><?php echo $row["SoLuotXem"] ?></strong></h5>
-						<h5>Mô tả: </h5>
+						<h5>Mô Tả: <?php echo $row["MoTa"] ?></h5>
                         <a href="index.php?c=101&id=<?php echo $id;?>">
                             <button type="button" class="btn btn-success">Đặt Hàng</button>
                         </a>
@@ -114,26 +113,3 @@
     ?>
 </div>
 </div>
-
-<!--số lượng và thành tiền-->
-<!--<h4>Số Lượng:  &nbsp;-->
-<!--	<select id="mySelect" onchange="myFunction()">-->
-<!--		<option value="1">1</option>-->
-<!--		<option value="2">2</option>-->
-<!--		<option value="3">3</option>-->
-<!--		<option value="4">4</option>-->
-<!--		<option value="5">5</option>-->
-<!--		<option value="6">6</option>-->
-<!--		<option value="7">7</option>-->
-<!--		<option value="8">8</option>-->
-<!--		<option value="9">9</option>-->
-<!--		<option value="10">10</option>-->
-<!--	</select>-->
-<!--	<p id="demo">Thành tiền: </p>-->
-<!--	<script language="JavaScript">-->
-<!--		function myFunction() {-->
-<!--			var x = document.getElementById("mySelect").value;-->
-<!--			var tong = parseInt(x);-->
-<!--			document.getElementById("demo").innerHTML = "Thành Tiền: " + (numberFormat('de-DE',tong*--><?php //echo $row["Gia"]?>
-<!--	</script>
-//</h4>

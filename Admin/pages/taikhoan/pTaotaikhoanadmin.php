@@ -73,7 +73,7 @@ if (isset($_POST['dangky'])) {
             $("#username").blur(function () {
                 var username = $("#username").val();
                 $.ajax({
-                    url: "pKiemtrakhitaotaikhoan.php",
+                    url: "exKiemtrakhitaotaikhoan.php",
                     type: "post",
                     dataType: "text",
                     data: {
@@ -94,7 +94,7 @@ if (isset($_POST['dangky'])) {
             $("#email").blur(function () {
                 var email = $("#email").val();
                 $.ajax({
-                    url: "pKiemtrakhitaotaikhoan.php",
+                    url: "exKiemtrakhitaotaikhoan.php",
                     type: "post",
                     dataType: "text",
                     data: {
@@ -113,7 +113,7 @@ if (isset($_POST['dangky'])) {
             $("#numberphone").blur(function () {
                 var phone = $("#numberphone").val();
                 $.ajax({
-                    url: "pKiemtrakhitaotaikhoan.php",
+                    url: "exKiemtrakhitaotaikhoan.php",
                     type: "post",
                     dataType: "text",
                     data: {

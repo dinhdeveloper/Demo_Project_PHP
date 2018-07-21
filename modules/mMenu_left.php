@@ -3,7 +3,7 @@
 		<img src="img/list-2x.png">&nbsp;&nbsp;<strong>DANH MỤC SẢN PHẨM</strong>
 	</a>
 	<?php
-        $sql = "SELECT * FROM loaisanpham";
+        $sql = "SELECT * FROM loaisanpham WHERE BiXoa = 0";
         $result = DataProvider::ExecuteQuery($sql);
         while ($row = mysqli_fetch_array($result)) {
             ?>

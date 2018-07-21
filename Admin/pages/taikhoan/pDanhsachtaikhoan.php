@@ -17,26 +17,18 @@
 		</tr>
 		</thead>
         <?php
-            $sql = "SELECT MaNhanVien,HinhNhanVien,TenDangNhap,MatKhau,HoTen,Email,
- 					SoDienThoai,BiXoa FROM nhanvien";
-            $result = DataProvider::ExecuteQuery($sql);
-            while($row = mysqli_fetch_array($result)){ // tìm và trả về một dòng kết quả của một truy vấn
-                ?>
-				<tr>
-					<th scope="row"><?php echo $row["MaNhanVien"];?></th>
-					<th><img src="../backend/modules/logo/<?php echo $row["HinhNhanVien"]; ?>" style="width: 80px;height: 80px"></th>
-					<td><?php echo $row["TenDangNhap"]; ?></td>
-					<td><?php echo $row["HoTen"]; ?></td>
-					<td><?php echo $row["Email"]; ?></td>
-					<td><?php echo $row["SoDienThoai"]; ?></td>
-					<td style="text-align: center"><img src="modules/logo/active.png"><?php //echo $row["BiXoa"]; ?></td>
-					<td>
-                        <a href="#"><img src="modules/logo/edit.png"></a>
-                        <a href="#"><img src="modules/logo/lock.png"></a>
-                    </td>
-				</tr>
-                <?php
-            }
+        $sql = "SELECT * FROM nhanvien";
+        $result = DataProvider::ExecuteQuery($sql);
+        while($row = mysqli_fetch_array($result)){
+            $maNhanVien = $row["MaNhanVien"];
+            $hinhAnh = $row["HinhNhanVien"];
+            $tenDangNhap = $row["TenDangNhap"];
+            $hoTen = $row["HoTen"];
+            $email = $row["Email"];
+            $soDienThoai = $row["SoDienThoai"];
+            $biXoa = $row["BiXoa"];
+            include("pages/taikhoan/tDanhsachtaikhoan.php");
+        }
         ?>
 	</table>
 </form>

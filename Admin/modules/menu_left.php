@@ -18,10 +18,10 @@ $row = mysqli_fetch_array($result);
                         </div>
                         <div class="col col s8 m8 l8">
                             <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn"
-                               href="main.php?c=102"
+                               href="main.php?c=2&k=3"
                                data-activates="profile-dropdown-nav"><?php echo $_SESSION['SHoTen']; ?><i
                                         class="mdi-navigation-arrow-drop-down right"></i></a>
-                            <a href="main.php?c=102">
+                            <a href="main.php?c=2&k=3">
                                 <p class="user-roal">Trang cá nhân</p>
                             </a>
                         </div>
@@ -40,13 +40,13 @@ $row = mysqli_fetch_array($result);
                             <div class="collapsible-body">
                                 <ul>
                                     <li>
-                                        <a href="main.php?c=102">
+                                        <a href="main.php?c=2&k=3">
                                             <i class="material-icons">keyboard_arrow_right</i>
                                             <span>Trang Cá Nhân</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="main.php?c=103">
+                                        <a href="main.php?c=2&k=4">
                                             <i class="material-icons">keyboard_arrow_right</i>
                                             <span>Cập nhật tài khoản</span>
                                         </a>
@@ -55,17 +55,11 @@ $row = mysqli_fetch_array($result);
                                     if ($_SESSION['SQuyenNguoiDung'] == 0) {
                                         ?>
                                         <li>
-                                            <a href="main.php?c=104">
+                                            <a href="main.php?c=2">
                                                 <i class="material-icons">keyboard_arrow_right</i>
                                                 <span>Danh sách nhân viên</span>
                                             </a>
                                         </li>
-<!--                                        <li>-->
-<!--                                            <a href="main.php?c=105">-->
-<!--                                                <i class="material-icons">keyboard_arrow_right</i>-->
-<!--                                                <span>Tạo tài khoản</span>-->
-<!--                                            </a>-->
-<!--                                        </li>-->
                                         <?php
                                     }
                                     ?>
@@ -80,7 +74,7 @@ $row = mysqli_fetch_array($result);
                             <div class="collapsible-body">
                                 <ul>
                                     <li>
-                                        <a href="main.php?c=201">
+                                        <a href="main.php?c=3">
                                             <i class="material-icons">keyboard_arrow_right</i>
                                             <span> Danh sách loại sản phẩm</span>
                                         </a>
@@ -89,21 +83,9 @@ $row = mysqli_fetch_array($result);
                                     if ($_SESSION['SQuyenNguoiDung'] == 1) {
                                         ?>
                                         <li>
-                                            <a href="main.php?c=202">
+                                            <a href="main.php?c=3&k=2">
                                                 <i class="material-icons">keyboard_arrow_right</i>
                                                 <span> Tạo loại sản phẩm mới</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="main.php?c=203">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span>Cập nhật loại sản phẩm</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span> Xóa loại sản phẩm</span>
                                             </a>
                                         </li>
                                         <?php
@@ -120,7 +102,7 @@ $row = mysqli_fetch_array($result);
                             <div class="collapsible-body">
                                 <ul>
                                     <li>
-                                        <a href="main.php?c=301">
+                                        <a href="main.php?c=4">
                                             <i class="material-icons">keyboard_arrow_right</i>
                                             <span>Danh sách tất cả sản phẩm</span>
                                         </a>
@@ -129,21 +111,9 @@ $row = mysqli_fetch_array($result);
                                     if ($_SESSION['SQuyenNguoiDung'] == 1) {
                                         ?>
                                         <li>
-                                            <a href="main.php?c=302">
+                                            <a href="main.php?c=4&k=2">
                                                 <i class="material-icons">keyboard_arrow_right</i>
                                                 <span> Tạo sản phẩm</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="main.php?c=303">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span> Cập nhật sản phẩm</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span> Xóa sản phẩm</span>
                                             </a>
                                         </li>
                                         <?php

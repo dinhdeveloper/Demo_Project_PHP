@@ -4,7 +4,7 @@
         $a = $_GET["a"];
         settype($a,"int");
     }
-    $sql = "SELECT * FROM loaisanpham WHERE MaLoaiSanPham =$a";
+    $sql = "SELECT * FROM loaisanpham WHERE BiXoa = 0 AND MaLoaiSanPham =$a";
     $result = DataProvider::ExecuteQuery($sql);
     while ($row1 = mysqli_fetch_array($result)) {
         ?>
@@ -20,7 +20,7 @@
             $a = $_GET["a"];
             settype($a,"int");
         }
-        $sql = "SELECT * FROM sanpham WHERE MaLoaiSanPham = $a";
+        $sql = "SELECT * FROM sanpham WHERE BiXoa = 0 MaLoaiSanPham = $a";
         $result = DataProvider::ExecuteQuery($sql);
         while ($row = mysqli_fetch_array($result)) {
             ?>

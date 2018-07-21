@@ -17,8 +17,4 @@
     $result = DataProvider::ExecuteQuery($sql);
     $dong = mysqli_num_rows($result);
     echo $dong;
-//    while ($row = mysqli_fetch_array($result)) {
-//        echo $row;
-//    }
-
 ?>

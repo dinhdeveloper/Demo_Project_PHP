@@ -114,7 +114,7 @@
                 <!-- profile-dropdown -->
                 <ul id="profile-dropdown" class="dropdown-content">
                     <li>
-                        <a href="main.php?c=102" class="grey-text text-darken-1">
+                        <a href="main.php?c=2&k=3" class="grey-text text-darken-1">
                             <i class="material-icons">face</i> Thông tin cá nhân</a>
                     </li>
                     <li>

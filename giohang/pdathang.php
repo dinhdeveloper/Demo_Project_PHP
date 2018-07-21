@@ -3,17 +3,18 @@ $makhachhang = "";
 if (isset($_POST["makhachhang"]) == true) {
     //Kiểm tra Mã khách hàng có tồn tại trong hệ thống chưa?
     $maKhachHang = $_POST["makhachhang"];
+
     $sql = "SELECT MaKhachHang FROM khachhang WHERE BiXoa = 0 AND MaKhachHang = '$makhachhang'";
     $result = DataProvider::ExecuteQuery($sql);
     $row = mysqli_fetch_array($result);
     if ($row == null) {
-        //DataProvider::ChangeURL("index.php?c=404&err_id=2");
+        DataProvider::ChangeURL("index.php?c=404&err_id=2");
     }
 } else {
     if (isset($_SESSION["makhachhang"]) == true) {
         $makhachhang = $_SESSION["makhachhang"];
     } else {
-        //DataProvider::ChangeURL("index.php?c=404&err_id=2");
+        DataProvider::ChangeURL("index.php?c=404&err_id=2");
     }
 }
 

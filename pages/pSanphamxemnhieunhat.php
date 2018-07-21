@@ -1,39 +1,16 @@
 <br>
 <div class="shadow-lg p-3 mb-5 bg-white rounded">
-    <h3 style="text-align: center;color: red">
+    <h4 style="text-align: center;color: red">
         <strong>
             <img src="img/hot.gif">
             SẢN PHẨM XEM NHIỀU NHẤT
             <img src="img/hot.gif">
         </strong>
-    </h3>
+    </h4>
 </div>
-<!--phan trang-->
-<?php
-    //	$p =1;
-    //    if (isset($_GET["p"])) {
-    //        $a = $_GET["p"];
-    //    }
-    //    $sql = "SELECT COUNT(MaSanPham) as total FROM sanpham WHERE MaLoaiSanPham = $p";
-    //    $result = DataProvider::ExecuteQuery($sql);
-    //    $row = mysqli_fetch_array($result);
-    //    $total_records = $row['total'];
-    //    $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
-    //    $limit = 6;
-    //    $total_page = ceil($total_records / $limit);
-    //    if ($current_page > $total_page) {
-    //        $current_page = $total_page;
-    //    } else if ($current_page < 1) {
-    //        $current_page = 1;
-    //    }
-    //    $start = ($current_page - 1) * $limit;
-    //    $sql = "SELECT MaSanPham,TenSanPham,MaLoaiSanPham,Gia,SoLuongTon,SoLuongBan,SoLuotXem,
-    // 				BiXoa,MoTa, HinhURL FROM sanpham LIMIT $start, $limit";
-    //    $result = DataProvider::ExecuteQuery($sql);
-    //?>
 <div class="row">
     <?php
-        $sql = "SELECT * FROM sanpham ORDER BY RAND(SoLuotXem >=60) DESC LIMIT 0,6";
+        $sql = "SELECT * FROM sanpham WHERE BiXoa = 0 ORDER BY RAND(SoLuotXem >=60) DESC LIMIT 0,6";
         //$sql = "SELECT * FROM `sanpham` WHERE SoLuotXem >=60";
         $result = DataProvider::ExecuteQuery($sql);
         while ($row = mysqli_fetch_array($result)) {
@@ -57,22 +34,3 @@
         }
     ?>
 </div>
-<!--<nav aria-label="Page navigation example">-->
-<!--	<ul class="pagination">-->
-<!--        --><?php
-    //            if ($current_page > 1 && $total_page > 1) {
-    //                echo '<li class="page-item"><a class="page-link" href="index.php?page=' . ($current_page - 1) . '">Previous</a></li>';
-    //            }
-    //            for ($i = 1; $i <= $total_page; $i++) {
-    //                if ($i == $current_page) {
-    //                    echo '<li class="page-item active"><a class="page-link" href="#">' . $i . '</a></li>';
-    //                } else {
-    //                    echo '<li class="page-item"><a class="page-link" href="index.php?page=' . $i . '">' . $i . '</a></li>';
-    //                }
-    //            }
-    //            if ($current_page < $total_page && $total_page > 1) {
-    //                echo '<li class="page-item"><a class="page-link" href="index.php?page=' . ($current_page + 1) . '">Next</a></li>';
-    //            }
-    //        ?>
-<!--	</ul>-->
-<!--</nav>-->
