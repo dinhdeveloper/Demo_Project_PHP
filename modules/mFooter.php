@@ -14,7 +14,7 @@
                         được lấy từ nguồn gốc Đà Lạt về cùng với nhiều món hàng đặc biệt
                         dành cho quý khách.
                         <p class="adam">
-                            Trần Cảnh Dinh
+                            Shop Flower Corner
                         </p>
                     </p>
                 </div>

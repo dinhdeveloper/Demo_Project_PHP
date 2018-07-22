@@ -6,7 +6,7 @@
                 <div class="feature__item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="img/feature1.png" style="height: 70px;width: 70px">
+                            <img src="images/icon/feature1.png" style="height: 70px;width: 70px">
                         </div>
                         <div class="col-9">
                             <h6><strong>Hỗ trợ bán hàng đa kênh</strong></h6>
@@ -20,7 +20,7 @@
                 <div class="feature__item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="img/feature2.png" style="height: 70px;width: 70px">
+                            <img src="images/icon/feature2.png" style="height: 70px;width: 70px">
                         </div>
                         <div class="col-9">
                             <h6><strong>Hỗ trợ vận chuyển</strong></h6>
@@ -34,7 +34,7 @@
                 <div class="feature__item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="img/feature3.png" style="height: 70px;width: 70px">
+                            <img src="images/icon/feature3.png" style="height: 70px;width: 70px">
                         </div>
                         <div class="col-9">
                             <h6><strong>Hotline trực tuyến</strong></h6>

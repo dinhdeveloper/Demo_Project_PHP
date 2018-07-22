@@ -20,13 +20,13 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
 		  integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="../js/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-3.3.1.js"></script>
 </head>
 <body style="overflow-x: hidden;">
 <?php include 'modules/mHeader.php'; ?>
 <div class="main-header">
-	<a href="index.php"><img src="img/backroungh.jpg" class="img-backrounght"></a>
+	<a href="index.php"><img src="images/icon/backroungh.jpg" class="img-backrounght"></a>
 </div>
 <br>
 <div class="container">
@@ -64,6 +64,10 @@
                     case 7:
                         include 'giohang/thongbaothanhcong.php';
                         break;
+                        //khách hàng:
+                    case 10:
+                        include ("khachhang/pIndex.php"); //xử lý khách hàng
+                    break;
                     case 101:
                         include 'giohang/themsanphamvaogiohang.php';
                         break;
@@ -102,7 +106,7 @@ include 'modules/mFooter.php';
 		})
 	})(jQuery);
 </script>
-<a href="#"><p><img src="img/cuon.png" id="cuon"></p></a>
+<a href="#"><p><img src="images/icon/cuon.png" id="cuon"></p></a>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
