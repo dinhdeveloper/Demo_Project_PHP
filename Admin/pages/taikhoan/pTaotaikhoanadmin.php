@@ -60,14 +60,14 @@ if (isset($_POST['dangky'])) {
     <meta name="description" content="">
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <script type="text/javascript" src="../../../../js/jquery/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../../../../js/jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../../js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery/jquery-3.3.1.js"></script>
     <title>Đăng Ký Admin</title>
     <link href="../../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../../assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
     <link href="../../assets/css/style.css" rel="stylesheet">
     <link href="../../assets/css/style-responsive.css" rel="stylesheet">
-    <link rel="icon" href="../../../../images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../../../images/favicon/favicon-32x32.png" sizes="32x32">
     <script>
         $(document).ready(function () {
             $("#username").blur(function () {
@@ -190,8 +190,5 @@ if (isset($_POST['dangky'])) {
 <script src="../../assets/js/jquery.js"></script>
 <script src="../../assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../assets/js/jquery.backstretch.min.js"></script>
-<!--<script>-->
-<!--	$.backstretch("assets/img/login-bg.jpg", {speed: 500});-->
-<!--</script>-->
 </body>
 </html>

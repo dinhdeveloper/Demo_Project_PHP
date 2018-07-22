@@ -130,7 +130,7 @@ $row = mysqli_fetch_array($result);
                             <div class="collapsible-body">
                                 <ul class="collapsible" data-collapsible="accordion">
                                     <li>
-                                        <a href="main.php?c=401">
+                                        <a href="main.php?c=5&k=1">
                                             <i class="material-icons">keyboard_arrow_right</i>
                                             <span>Danh sách đơn đặt hàng</span>
                                         </a>
@@ -141,18 +141,18 @@ $row = mysqli_fetch_array($result);
 <!--                                            <span>Chi tiết đơn đặt hàng</span>-->
 <!--                                        </a>-->
 <!--                                    </li>-->
-                                    <?php
-                                    if ($_SESSION['SQuyenNguoiDung'] == 1) {
-                                        ?>
-                                        <li>
-                                            <a href="#">
-                                                <i class="material-icons">keyboard_arrow_right</i>
-                                                <span>Cập nhật đơn đặt hàng</span>
-                                            </a>
-                                        </li>
-                                        <?php
-                                    }
-                                    ?>
+<!--                                    --><?php
+//                                    if ($_SESSION['SQuyenNguoiDung'] == 1) {
+//                                        ?>
+<!--                                        <li>-->
+<!--                                            <a href="#">-->
+<!--                                                <i class="material-icons">keyboard_arrow_right</i>-->
+<!--                                                <span>Cập nhật đơn đặt hàng</span>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        --><?php
+//                                    }
+//                                    ?>
                                 </ul>
                             </div>
                         </li>

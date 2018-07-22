@@ -48,6 +48,7 @@ if (isset($_GET['c'])) {
     <link href="vendors/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet">
     <link href="vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.min.js">
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
 </head>
 <body>
 <?php
@@ -77,46 +78,9 @@ include_once 'modules/menu_left.php';
         case 4:
             include ("pages/sanpham/pIndex.php"); //quản lý sản phẩm
         break;
-        //tài khoản
-        case 102:
-            include("pages/taikhoan/pThongtintaikhoan.php"); //trang thông tin tài khoản
-            break;
-        case 103:
-            include("pages/taikhoan/pCapnhattaikhoan.php");// trang cập nhật tài khoản
-            break;
-//        case 105:
-//            include ("pages/taikhoan/pTaotaikhoanadmin.php");
-//            break;
-        //Loại sản phẩm
-        case 201:
-            include("pages/loaisanpham/pDanhsachloaisanpham.php");//trang danh sách loại sản phẩm
-            break;
-        case 202:
-            include("pages/loaisanpham/pTaoloaisanpham.php"); //trang tạo loại sản phẩm mới
-            break;
-        case 203:
-            include("pages/loaisanpham/pCapnhatloaisanpham.php");//trang cập nhật loai sản phẩm
-            break;
-        case 204:
-            include("pages/loaisanpham/pPhanloaisanpham.php");//trang phân loại sản phẩm
-            break;
-        //Sản phẩm:
-        case 301:
-            include("pages/sanpham/pDanhsachtatcasanpham.php"); //trang danh sách tất cả sản phẩm
-            break;
-        case 302:
-            include("pages/sanpham/pTaosanphammoi.php"); //trang tạo sản phẩm mới
-            break;
-        case 303:
-            include ("pages/sanpham/pCapnhatsanpham.php"); //cập nhật lại sản phẩm
+        case 5:
+            include ("pages/dondathang/pIndex.php"); // quản lý đơn đặt hàng
         break;
-        //đơn đặt hàng
-        case 401:
-            include("pages/dondathang/danhsachdondathang.php");
-            break;
-        case 402:
-            include("pages/dondathang/chitietdondathang.php");
-            break;
         // khach hang:
         case 601:
             include ("pages/khachhang/pDanhsachtaikhoankhachhang.php");

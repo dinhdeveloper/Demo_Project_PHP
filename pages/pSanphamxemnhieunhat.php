@@ -2,9 +2,9 @@
 <div class="shadow-lg p-3 mb-5 bg-white rounded">
     <h4 style="text-align: center;color: red">
         <strong>
-            <img src="img/hot.gif">
+            <img src="images/icon/hot.gif">
             SẢN PHẨM XEM NHIỀU NHẤT
-            <img src="img/hot.gif">
+            <img src="images/icon/hot.gif">
         </strong>
     </h4>
 </div>
